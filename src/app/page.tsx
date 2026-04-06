@@ -40,7 +40,7 @@ export default function Home() {
         description="We build AI solutions faster than you can sign the agreement. While others are still scoping, we're already delivering production-ready automation."
         primaryCta={{ label: "Book a Consultation", href: "/book-consultation" }}
         secondaryCta={{ label: "Our Services", href: "/services" }}
-        backgroundClass="bg-[#0f1b3d]"
+        backgroundImage="https://images.unsplash.com/photo-1639322537228-f710d846310a?w=1920&q=80"
       />
 
       <FeatureGrid
