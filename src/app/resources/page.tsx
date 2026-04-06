@@ -96,7 +96,7 @@ export default function ResourcesPage() {
       <CtaSection
         title="Want to discuss your automation project?"
         description="We'd love to hear about the processes you're looking to streamline."
-        cta={{ label: "Book a Consultation", href: "/book-consultation" }}
+        cta={{ label: "Contact Us", href: "/book-consultation" }}
       />
     </>
   );

@@ -64,7 +64,7 @@ export default function HowWeWorkPage() {
       <CtaSection
         title="Let's start with discovery"
         description="A 30-minute call to understand your process and see if AI automation is the right fit."
-        cta={{ label: "Book a Consultation", href: "/book-consultation" }}
+        cta={{ label: "Contact Us", href: "/book-consultation" }}
       />
     </>
   );

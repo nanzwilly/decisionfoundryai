@@ -114,7 +114,7 @@ export default function CaseStudiesPage() {
       <CtaSection
         title="Want results like these?"
         description="Tell us about the process you want to automate and we'll show you what's possible."
-        cta={{ label: "Book a Consultation", href: "/book-consultation" }}
+        cta={{ label: "Contact Us", href: "/book-consultation" }}
       />
     </>
   );

@@ -10,7 +10,7 @@ export const siteConfig = {
     { label: "Industries", href: "/industries" },
     { label: "Resources", href: "/resources" },
   ],
-  cta: { label: "Book a Consultation", href: "/book-consultation" },
+  cta: { label: "Contact Us", href: "/book-consultation" },
   footer: {
     services: [
       { label: "How We Work", href: "/how-we-work" },

@@ -154,7 +154,7 @@ export default function BookConsultationPage() {
                 </div>
 
                 <Button type="submit" size="lg" className="w-full">
-                  Request a Consultation
+                  Contact Us
                 </Button>
 
                 <p className="text-center text-xs text-muted-foreground">

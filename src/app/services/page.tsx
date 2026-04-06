@@ -58,7 +58,7 @@ export default function ServicesPage() {
         title="AI automation services built around"
         highlight="your processes."
         description="We don't sell a one-size-fits-all platform. We study your workflows, build custom AI agents, and integrate them into your existing systems."
-        primaryCta={{ label: "Book a Consultation", href: "/book-consultation" }}
+        primaryCta={{ label: "Contact Us", href: "/book-consultation" }}
         secondaryCta={{ label: "How We Work", href: "/how-we-work" }}
         backgroundImage="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&q=80"
       />

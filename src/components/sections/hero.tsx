@@ -16,6 +16,7 @@ interface HeroProps {
   secondaryCta?: { label: string; href: string };
   backgroundImage?: string;
   backgroundClass?: string;
+  large?: boolean;
 }
 
 export function Hero({
@@ -27,13 +28,15 @@ export function Hero({
   secondaryCta,
   backgroundImage,
   backgroundClass,
+  large,
 }: HeroProps) {
   const isDark = !!(backgroundImage || backgroundClass);
 
   return (
     <section
       className={cn(
-        "relative overflow-hidden py-24 sm:py-32",
+        "relative overflow-hidden",
+        "flex items-center min-h-[480px] py-24 sm:py-32",
         isDark
           ? (backgroundClass || "bg-gray-950")
           : "bg-gradient-to-b from-background to-muted/30"
@@ -59,7 +62,7 @@ export function Hero({
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--border)/0.3)_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--border)/0.3)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
       )}
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           className="mx-auto max-w-3xl text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -80,7 +83,9 @@ export function Hero({
           )}
           <h1
             className={cn(
-              "text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl",
+              large
+                ? "text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
+                : "text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl",
               isDark && "text-white"
             )}
           >
@@ -100,14 +105,14 @@ export function Hero({
           </h1>
           <p
             className={cn(
-              "mt-6 text-lg leading-8 sm:text-xl",
+              large ? "mt-6 text-lg leading-8 sm:text-xl" : "mt-4 text-base leading-7 sm:text-lg",
               isDark ? "text-white/80" : "text-muted-foreground"
             )}
           >
             {description}
           </p>
           {(primaryCta || secondaryCta) && (
-            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               {primaryCta && (
                 <Link
                   href={primaryCta.href}
