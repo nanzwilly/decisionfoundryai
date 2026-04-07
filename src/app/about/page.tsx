@@ -153,7 +153,7 @@ export default function AboutPage() {
       <CtaSection
         title="Want to work with us?"
         description="Tell us about the process you want to automate and let's explore how AI agents can help."
-        cta={{ label: "Contact Us", href: "/book-consultation" }}
+        cta={{ label: "Contact Us", href: "/contact" }}
       />
     </>
   );

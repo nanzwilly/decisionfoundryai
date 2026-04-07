@@ -38,7 +38,7 @@ export default function Home() {
         title="Smart AI agents to automate your"
         highlight="business processes."
         description="We build AI solutions faster than you can sign the agreement. While others are still scoping, we're already delivering production-ready automation."
-        primaryCta={{ label: "Contact Us", href: "/book-consultation" }}
+        primaryCta={{ label: "Contact Us", href: "/contact" }}
         secondaryCta={{ label: "Our Services", href: "/services" }}
         backgroundImage="https://images.unsplash.com/photo-1639322537228-f710d846310a?w=1920&q=80"
         large
@@ -54,7 +54,7 @@ export default function Home() {
       <CtaSection
         title="Ready to automate a process?"
         description="Tell us about the manual, repetitive work slowing your team down. We'll show you how AI agents can handle it."
-        cta={{ label: "Contact Us", href: "/book-consultation" }}
+        cta={{ label: "Contact Us", href: "/contact" }}
       />
     </>
   );

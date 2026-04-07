@@ -72,7 +72,7 @@ export default function IndustriesPage() {
       <CtaSection
         title="Don't see your industry?"
         description="If you have a manual process that involves reading data, making decisions, and updating systems — we can probably automate it."
-        cta={{ label: "Let's Talk", href: "/book-consultation" }}
+        cta={{ label: "Let's Talk", href: "/contact" }}
       />
     </>
   );

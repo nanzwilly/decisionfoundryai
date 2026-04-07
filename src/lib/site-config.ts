@@ -11,7 +11,7 @@ export const siteConfig = {
     { label: "Resources", href: "/resources" },
     { label: "About", href: "/about" },
   ],
-  cta: { label: "Contact Us", href: "/book-consultation" },
+  cta: { label: "Contact Us", href: "/contact" },
   footer: {
     services: [
       { label: "How We Work", href: "/how-we-work" },
