@@ -8,7 +8,13 @@
       "Bash(npm run:*)",
       "mcp__Claude_Preview__preview_start",
       "Bash(gh auth:*)",
-      "Bash(where gh:*)"
+      "Bash(where gh:*)",
+      "WebFetch(domain:www.decisionfoundry.com)",
+      "Bash(curl -sO https://www.decisionfoundry.com/wp-content/themes/decisionfoundry/custom-assets/images/about/team/seby.png)",
+      "Bash(curl -sO https://www.decisionfoundry.com/wp-content/themes/decisionfoundry/custom-assets/images/about/team/anoop.png)",
+      "Bash(curl -sO https://www.decisionfoundry.com/wp-content/themes/decisionfoundry/custom-assets/images/about/team/asheel.png)",
+      "Bash(curl -sO https://www.decisionfoundry.com/wp-content/themes/decisionfoundry/custom-assets/images/about/team/praveen.png)",
+      "Bash(curl -sO https://www.decisionfoundry.com/wp-content/themes/decisionfoundry/custom-assets/images/about/team/lijindev.png)"
     ]
   }
 }

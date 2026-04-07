@@ -9,6 +9,7 @@ export const siteConfig = {
     { label: "Case Studies", href: "/case-studies" },
     { label: "Industries", href: "/industries" },
     { label: "Resources", href: "/resources" },
+    { label: "About", href: "/about" },
   ],
   cta: { label: "Contact Us", href: "/book-consultation" },
   footer: {
@@ -17,11 +18,7 @@ export const siteConfig = {
       { label: "Industries", href: "/industries" },
     ],
     company: [
-      {
-        label: "About Us",
-        href: "https://decisionfoundry.com/about",
-        external: true,
-      },
+      { label: "About Us", href: "/about" },
       {
         label: "Contact",
         href: "https://decisionfoundry.com/contact",
