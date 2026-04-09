@@ -1,14 +1,11 @@
-import type { Metadata } from "next";
+"use client";
+
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { Hero } from "@/components/sections/hero";
 import { CtaSection } from "@/components/sections/cta-section";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-
-export const metadata: Metadata = {
-  title: "Resources",
-  description:
-    "Articles, insights, and guides on agentic AI, business process automation, and human-in-the-loop workflows.",
-};
 
 const resources = [
   {
@@ -16,42 +13,48 @@ const resources = [
     title: "What Is Agentic AI? A Practical Guide for Business Leaders",
     description:
       "Move beyond chatbots. Understand what AI agents are, how they work, and where they deliver real ROI in business processes.",
-    date: "Coming Soon",
+    slug: "what-is-agentic-ai",
+    date: "April 2025",
   },
   {
     category: "Article",
     title: "Human-in-the-Loop: Why Full Automation Isn't Always the Answer",
     description:
       "The case for keeping humans in control of critical decisions while letting AI handle the heavy lifting.",
-    date: "Coming Soon",
+    slug: "human-in-the-loop",
+    date: "April 2025",
   },
   {
     category: "Case Study",
     title: "From Manual to Automated: An AP Processing Transformation",
     description:
       "How we reduced invoice processing time from days to minutes using AI agents with human review workflows.",
-    date: "Coming Soon",
+    slug: "ap-processing-transformation",
+    date: "March 2025",
   },
   {
     category: "Article",
     title: "Integrating AI Agents with Legacy Systems like NetSuite and EPIC",
     description:
       "Practical lessons from connecting modern AI automation to established enterprise platforms.",
-    date: "Coming Soon",
+    slug: "integrating-ai-with-legacy-systems",
+    date: "March 2025",
   },
   {
     category: "Guide",
     title: "Is Your Process Ready for AI Automation? A Checklist",
     description:
       "Not every process is a good fit for AI automation. Here's how to evaluate which ones will deliver the most value.",
-    date: "Coming Soon",
+    slug: "ai-automation-readiness-checklist",
+    date: "February 2025",
   },
   {
     category: "Article",
     title: "Call Quality at Scale: Moving Beyond 3% Sample Reviews",
     description:
       "Why AI-powered call monitoring is replacing manual sampling — and what it means for agent performance.",
-    date: "Coming Soon",
+    slug: "call-quality-at-scale",
+    date: "February 2025",
   },
 ];
 
@@ -69,25 +72,29 @@ export default function ResourcesPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {resources.map((resource) => (
-              <Card
-                key={resource.title}
-                className="border-border/50 transition-colors hover:border-border"
+              <Link
+                key={resource.slug}
+                href={`/resources/${resource.slug}`}
+                className="group"
               >
-                <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <Badge variant="secondary">{resource.category}</Badge>
-                    <span className="text-xs text-muted-foreground">
-                      {resource.date}
-                    </span>
-                  </div>
-                  <CardTitle className="mt-2 text-lg leading-snug">
-                    {resource.title}
-                  </CardTitle>
-                  <CardDescription className="text-sm leading-relaxed">
-                    {resource.description}
-                  </CardDescription>
-                </CardHeader>
-              </Card>
+                <Card className="h-full border-border/50 transition-all hover:border-border hover:shadow-md">
+                  <CardHeader>
+                    <div className="flex items-center justify-between">
+                      <Badge variant="secondary">{resource.category}</Badge>
+                      <span className="text-xs text-muted-foreground">
+                        {resource.date}
+                      </span>
+                    </div>
+                    <CardTitle className="mt-2 flex items-center gap-2 text-lg leading-snug">
+                      {resource.title}
+                      <ArrowRight className="h-4 w-4 shrink-0 opacity-0 transition-opacity group-hover:opacity-100" />
+                    </CardTitle>
+                    <CardDescription className="text-sm leading-relaxed">
+                      {resource.description}
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
