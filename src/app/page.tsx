@@ -6,6 +6,7 @@ import {
   Zap,
 } from "lucide-react";
 import { Hero } from "@/components/sections/hero";
+import { ArchitectureDiagram } from "@/components/sections/architecture-diagram";
 import { FeatureGrid } from "@/components/sections/feature-grid";
 import { CtaSection } from "@/components/sections/cta-section";
 
@@ -43,6 +44,8 @@ export default function Home() {
         backgroundImage="https://images.unsplash.com/photo-1639322537228-f710d846310a?w=1920&q=80"
         large
       />
+
+      <ArchitectureDiagram />
 
       <FeatureGrid
         label="Capabilities"
