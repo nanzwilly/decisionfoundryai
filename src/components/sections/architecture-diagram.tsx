@@ -53,10 +53,10 @@ const engineLayers = [
 ];
 
 const outputs = [
-  { icon: Zap, label: "Actions & Updates", color: "bg-orange-500/10 text-orange-600 border-orange-500/20" },
-  { icon: Eye, label: "Insights & Dashboards", color: "bg-green-500/10 text-green-600 border-green-500/20" },
-  { icon: Bell, label: "Notifications & Alerts", color: "bg-red-500/10 text-red-600 border-red-500/20" },
-  { icon: FileBarChart, label: "Reports & Analytics", color: "bg-purple-500/10 text-purple-600 border-purple-500/20" },
+  { icon: Zap, label: "Actions & Updates" },
+  { icon: Eye, label: "Insights & Dashboards" },
+  { icon: Bell, label: "Notifications & Alerts" },
+  { icon: FileBarChart, label: "Reports & Analytics" },
 ];
 
 const humanSteps = [
@@ -82,7 +82,7 @@ export function ArchitectureDiagram() {
         </div>
 
         {/* Main architecture: Inputs → Engine → Outputs */}
-        <div className="grid items-center gap-6 lg:grid-cols-[1fr_2fr_1fr]">
+        <div className="grid items-center gap-10 lg:grid-cols-[1fr_2fr_1fr]">
 
           {/* Inputs */}
           <motion.div
@@ -133,11 +133,11 @@ export function ArchitectureDiagram() {
             </div>
 
             {/* Flow arrows (desktop) */}
-            <div className="pointer-events-none absolute left-0 top-1/2 hidden -translate-x-full -translate-y-1/2 pr-2 lg:block">
-              <ArrowRight className="h-5 w-5 text-muted-foreground/40" />
+            <div className="pointer-events-none absolute left-0 top-1/2 hidden -translate-x-[calc(100%+12px)] -translate-y-1/2 lg:block">
+              <ArrowRight className="h-7 w-7 text-muted-foreground/50" />
             </div>
-            <div className="pointer-events-none absolute right-0 top-1/2 hidden -translate-y-1/2 translate-x-full pl-2 lg:block">
-              <ArrowRight className="h-5 w-5 text-muted-foreground/40" />
+            <div className="pointer-events-none absolute right-0 top-1/2 hidden -translate-y-1/2 translate-x-[calc(100%+12px)] lg:block">
+              <ArrowRight className="h-7 w-7 text-muted-foreground/50" />
             </div>
           </motion.div>
 
@@ -155,10 +155,10 @@ export function ArchitectureDiagram() {
             {outputs.map((output) => (
               <div
                 key={output.label}
-                className={`flex items-center gap-3 rounded-lg border px-4 py-3 shadow-sm ${output.color}`}
+                className="flex items-center gap-3 rounded-lg border border-primary/15 bg-primary/5 px-4 py-3 shadow-sm"
               >
-                <output.icon className="h-4 w-4 shrink-0" />
-                <span className="text-sm font-semibold">{output.label}</span>
+                <output.icon className="h-4 w-4 shrink-0 text-primary/70" />
+                <span className="text-sm font-semibold text-foreground">{output.label}</span>
               </div>
             ))}
           </motion.div>
