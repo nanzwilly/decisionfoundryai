@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "How We Work - Decision Foundry AI",
+  title: "Contact Decision Foundry AI",
   description:
-    "Our engagement model: from discovery and process mapping to build, deployment, and ongoing optimization.",
+    "Tell us about the process you want to automate. We'll give you an honest assessment of whether AI automation is the right fit.",
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

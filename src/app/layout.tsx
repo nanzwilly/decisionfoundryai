@@ -12,8 +12,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Decision Foundry AI | Agentic AI for Business Process Automation",
-    template: "%s | Decision Foundry AI",
+    default: "Agentic AI for Business Process Automation - Decision Foundry AI",
+    template: "%s",
   },
   description:
     "We build AI agents that automate your business processes. Agentic AI solutions with human-in-the-loop workflows for accounts payable, call quality, insurance, and more.",

@@ -24,11 +24,6 @@ export const siteConfig = {
         href: "https://decisionfoundry.com/contact",
         external: true,
       },
-      {
-        label: "Careers",
-        href: "https://decisionfoundry.com/careers",
-        external: true,
-      },
     ],
     resources: [
       { label: "Blog", href: "/resources" },

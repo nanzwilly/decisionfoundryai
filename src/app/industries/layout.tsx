@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Industries",
+  title: "Industries - Decision Foundry AI",
   description:
     "AI automation solutions for insurance, financial services, contact centers, healthcare, logistics, and more.",
 };

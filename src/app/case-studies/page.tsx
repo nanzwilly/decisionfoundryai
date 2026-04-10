@@ -1,7 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { ArrowRight, FileText, PhoneCall, ShieldCheck } from "lucide-react";
+import { FileText, PhoneCall, ShieldCheck } from "lucide-react";
 import { Hero } from "@/components/sections/hero";
 import { CtaSection } from "@/components/sections/cta-section";
 import { Badge } from "@/components/ui/badge";
@@ -21,7 +20,6 @@ const caseStudies = [
       "Manual data entry eliminated for 85%+ of invoices",
       "Error rate dropped significantly with AI extraction + human review",
     ],
-    href: "/solutions/accounts-payable",
   },
   {
     icon: PhoneCall,
@@ -36,7 +34,6 @@ const caseStudies = [
       "Consistent scoring eliminated evaluator bias",
       "Agent performance improved through targeted, timely feedback",
     ],
-    href: "/solutions/call-quality",
   },
   {
     icon: ShieldCheck,
@@ -51,7 +48,6 @@ const caseStudies = [
       "Email backlog eliminated with 24/7 automated processing",
       "Staff freed to focus on complex underwriting tasks",
     ],
-    href: "/solutions/certificate-of-insurance",
   },
 ];
 
@@ -98,13 +94,6 @@ export default function CaseStudiesPage() {
                     ))}
                   </ul>
                 </div>
-                <Link
-                  href={study.href}
-                  className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
-                >
-                  Learn more about this solution
-                  <ArrowRight className="h-3.5 w-3.5" />
-                </Link>
               </CardContent>
             </Card>
           ))}
